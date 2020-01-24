@@ -16,7 +16,7 @@ interface Cacheable {
 	/**
 	 * Sets cache value
 	 *
-	 * @since  [Next]
+	 * @since  1.0.0
 	 * @param  mixed $value Value to store.
 	 * @return void
 	 */
@@ -25,7 +25,7 @@ interface Cacheable {
 	/**
 	 * Adds cache if it's not already set
 	 *
-	 * @since  [Next]
+	 * @since  1.0.0
 	 * @param  mixed $value Value to store.
 	 * @return void
 	 */
@@ -34,7 +34,7 @@ interface Cacheable {
 	/**
 	 * Gets value from cache
 	 *
-	 * @since  [Next]
+	 * @since  1.0.0
 	 * @return mixed|false Cached value or false if not set
 	 */
 	public function get();
@@ -42,7 +42,7 @@ interface Cacheable {
 	/**
 	 * Deletes value from cache
 	 *
-	 * @since  [Next]
+	 * @since  1.0.0
 	 * @return void
 	 */
 	public function delete();

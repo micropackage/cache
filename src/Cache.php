@@ -15,7 +15,7 @@ class Cache {
 	/**
 	 * Driver object
 	 *
-	 * @since [Next]
+	 * @since 1.0.0
 	 * @var   Interfaces\Cacheable
 	 */
 	private $driver;
@@ -23,7 +23,7 @@ class Cache {
 	/**
 	 * Cache key
 	 *
-	 * @since [Next]
+	 * @since 1.0.0
 	 * @var   string
 	 */
 	private $key;
@@ -31,7 +31,7 @@ class Cache {
 	/**
 	 * Cache constructor
 	 *
-	 * @since [Next]
+	 * @since 1.0.0
 	 * @param Interfaces\Cacheable $driver Driver instance.
 	 * @param string               $key    Cache key.
 	 */
@@ -47,7 +47,7 @@ class Cache {
 	/**
 	 * Passes the method call to the driver
 	 *
-	 * @since  [Next]
+	 * @since  1.0.0
 	 * @param  string $method_name Called method name.
 	 * @param  array  $arguments   List of arguments passed.
 	 * @return mixed
@@ -61,7 +61,7 @@ class Cache {
 	 * If the value is not set, the callback is called to
 	 * collect the value.
 	 *
-	 * @since  [Next]
+	 * @since  1.0.0
 	 * @param  string   $key      Cache key.
 	 * @param  callable $callback Callback which gets the value.
 	 * @return mixed              Cached value

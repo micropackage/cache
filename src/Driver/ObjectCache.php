@@ -17,7 +17,7 @@ class ObjectCache {
 	/**
 	 * Cache group
 	 *
-	 * @since [Next]
+	 * @since 1.0.0
 	 * @var   string
 	 */
 	protected $group = '';
@@ -25,7 +25,7 @@ class ObjectCache {
 	/**
 	 * Constructor
 	 *
-	 * @since [Next]
+	 * @since 1.0.0
 	 * @param string $group      Cache group.
 	 * @param int    $expiration Expiration in seconds, default: not expiring.
 	 */
@@ -37,7 +37,7 @@ class ObjectCache {
 	/**
 	 * Gets the cache group
 	 *
-	 * @since  [Next]
+	 * @since  1.0.0
 	 * @return string
 	 */
 	public function get_group() {
@@ -47,7 +47,7 @@ class ObjectCache {
 	/**
 	 * Sets the cache group
 	 *
-	 * @since  [Next]
+	 * @since  1.0.0
 	 * @param  string $group Cache group.
 	 * @return $this
 	 */
@@ -59,7 +59,7 @@ class ObjectCache {
 	/**
 	 * Sets cache value
 	 *
-	 * @since  [Next]
+	 * @since  1.0.0
 	 * @param  mixed $value Value to store.
 	 * @return void
 	 */
@@ -70,7 +70,7 @@ class ObjectCache {
 	/**
 	 * Adds cache if it's not already set
 	 *
-	 * @since  [Next]
+	 * @since  1.0.0
 	 * @param  mixed $value Value to store.
 	 * @return void
 	 */
@@ -81,7 +81,7 @@ class ObjectCache {
 	/**
 	 * Gets value from cache
 	 *
-	 * @since  [Next]
+	 * @since  1.0.0
 	 * @return mixed|false Cached value or false if not set
 	 */
 	public function get() {
@@ -92,7 +92,7 @@ class ObjectCache {
 	 * Gets value from cache and updates the local cache
 	 * from persistent cache.
 	 *
-	 * @since  [Next]
+	 * @since  1.0.0
 	 * @return mixed|false Cached value or false if not set
 	 */
 	public function force_get() {
@@ -102,7 +102,7 @@ class ObjectCache {
 	/**
 	 * Deletes value from cache
 	 *
-	 * @since  [Next]
+	 * @since  1.0.0
 	 * @return void
 	 */
 	public function delete() {

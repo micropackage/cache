@@ -17,7 +17,7 @@ abstract class Driver implements Cacheable {
 	/**
 	 * Cache key
 	 *
-	 * @since [Next]
+	 * @since 1.0.0
 	 * @var   string
 	 */
 	private $key;
@@ -25,7 +25,7 @@ abstract class Driver implements Cacheable {
 	/**
 	 * Sets cache value
 	 *
-	 * @since  [Next]
+	 * @since  1.0.0
 	 * @param  mixed $value Value to store.
 	 * @return void
 	 */
@@ -34,7 +34,7 @@ abstract class Driver implements Cacheable {
 	/**
 	 * Adds cache if it's not already set
 	 *
-	 * @since  [Next]
+	 * @since  1.0.0
 	 * @param  mixed $value Value to store.
 	 * @return void
 	 */
@@ -43,7 +43,7 @@ abstract class Driver implements Cacheable {
 	/**
 	 * Gets value from cache
 	 *
-	 * @since  [Next]
+	 * @since  1.0.0
 	 * @return mixed|false Cached value or false if not set
 	 */
 	abstract public function get();
@@ -51,7 +51,7 @@ abstract class Driver implements Cacheable {
 	/**
 	 * Deletes value from cache
 	 *
-	 * @since  [Next]
+	 * @since  1.0.0
 	 * @return void
 	 */
 	abstract public function delete();
@@ -59,7 +59,7 @@ abstract class Driver implements Cacheable {
 	/**
 	 * Gets the cache key
 	 *
-	 * @since  [Next]
+	 * @since  1.0.0
 	 * @return string
 	 */
 	public function get_key() {
@@ -69,7 +69,7 @@ abstract class Driver implements Cacheable {
 	/**
 	 * Sets the cache key
 	 *
-	 * @since  [Next]
+	 * @since  1.0.0
 	 * @param  string $key Cache key.
 	 * @return $this
 	 */

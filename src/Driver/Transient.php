@@ -19,7 +19,7 @@ class Transient {
 	/**
 	 * Constructor
 	 *
-	 * @since [Next]
+	 * @since 1.0.0
 	 * @param int $expiration Expiration in seconds, default: not expiring.
 	 */
 	public function __construct( $expiration = 0 ) {
@@ -29,7 +29,7 @@ class Transient {
 	/**
 	 * Sets cache value
 	 *
-	 * @since  [Next]
+	 * @since  1.0.0
 	 * @param  mixed $value Value to store.
 	 * @return void
 	 */
@@ -40,7 +40,7 @@ class Transient {
 	/**
 	 * Adds cache if it's not already set
 	 *
-	 * @since  [Next]
+	 * @since  1.0.0
 	 * @param  mixed $value Value to store.
 	 * @return void
 	 */
@@ -53,7 +53,7 @@ class Transient {
 	/**
 	 * Gets value from cache
 	 *
-	 * @since  [Next]
+	 * @since  1.0.0
 	 * @return mixed|false Cached value or false if not set
 	 */
 	public function get() {
@@ -63,7 +63,7 @@ class Transient {
 	/**
 	 * Deletes value from cache
 	 *
-	 * @since  [Next]
+	 * @since  1.0.0
 	 * @return void
 	 */
 	public function delete() {
