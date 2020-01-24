@@ -40,18 +40,18 @@ By default the expiration is set to `0` which means the transient never expires.
 
 #### Available methods
 
-| Method                                | Description                                                  | Returns                                                      |
-| ------------------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| ```set_key( (string) $key )```           | Sets the cache key                                           | $this                                                        |
+| Method                                    | Description                                                  | Returns                                                      |
+| ----------------------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| ```set_key( (string) $key )```            | Sets the cache key                                           | $this                                                        |
 | ```get_key()```                           | Gets the cache key                                           | (string) Cache key                                           |
 | ```set_group( (string) $group )```        | Sets the cache group                                         | $this                                                        |
 | ```get_group```                           | Gets the cache group                                         | (string) Default empty string                                |
 | ```set_expiration( (int) $expiration )``` | Sets the cache expiration in seconds                         | $this                                                        |
-| ```get_expiration()```                    | Gets the cache expiration                                    | (int) Expiration seconds, default 0 which means the cache doesn't expire |
+| ```get_expiration()```                    | Gets the cache expiration                                    | (int) Expiration seconds <br />Default 0 which means the cache  <br />doesn't expire |
 | ```set( (mixed) $value )```               | Sets the cache                                               | void                                                         |
-| ```add( (mixed) $value )```               | Sets the cache only if it  wasn't set before                 | void                                                         |
-| ```get()```                               | Gets the cached value                                        | mixed\|false if not set                                      |
-| ```force_get()```                         | Gets the cached value and updates the local cache from persistent cache | mixed\|false if not set                                      |
+| ```add( (mixed) $value )```               | Sets the cache <br />only if it  wasn't set before           | void                                                         |
+| ```get()```                               | Gets the cached value                                        | mixed\|false<br />False if not set                           |
+| ```force_get()```                         | Gets the cached value  <br />and updates the local cache <br />from persistent cache | mixed\|false <br />False if not set                          |
 | ```delete()```                            | Deletes the cache                                            | void                                                         |
 
 ### Transient Cache
@@ -69,15 +69,15 @@ By default the expiration is set to `0` which means the transient never expires.
 
 #### Available methods
 
-| Method                                | Description                                  | Returns                                                      |
-| ------------------------------------- | -------------------------------------------- | ------------------------------------------------------------ |
+| Method                                    | Description                                  | Returns                                                      |
+| ----------------------------------------- | -------------------------------------------- | ------------------------------------------------------------ |
 | ```set_key( (string) $key )```            | Sets the cache key                           | $this                                                        |
 | ```get_key()```                           | Gets the cache key                           | (string) Cache key                                           |
 | ```set_expiration( (int) $expiration )``` | Sets the cache expiration in seconds         | $this                                                        |
-| ```get_expiration()```                    | Gets the cache expiration                    | (int) Expiration seconds, default 0 which means the cache doesn't expire |
+| ```get_expiration()```                    | Gets the cache expiration                    | (int) Expiration seconds <br />Default 0 which means the cache <br /> doesn't expire |
 | ```set( (mixed) $value )```               | Sets the cache                               | void                                                         |
 | ```add( (mixed) $value )```               | Sets the cache only if it  wasn't set before | void                                                         |
-| ```get()```                               | Gets the cached value                        | mixed\|false if not set                                      |
+| ```get()```                               | Gets the cached value                        | mixed\|false <br />False if not set                          |
 | ```delete()```                            | Deletes the cache                            | void                                                         |
 
 ### Cache manipulator
