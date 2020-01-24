@@ -15,7 +15,7 @@ trait Expiration {
 	/**
 	 * Cache expiration in seconds.
 	 *
-	 * @since [Next]
+	 * @since 1.0.0
 	 * @var   integer
 	 */
 	protected $expiration = 0;
@@ -23,7 +23,7 @@ trait Expiration {
 	/**
 	 * Gets the cache expiration
 	 *
-	 * @since  [Next]
+	 * @since  1.0.0
 	 * @return string
 	 */
 	public function get_expiration() {
@@ -33,7 +33,7 @@ trait Expiration {
 	/**
 	 * Sets the cache expiration
 	 *
-	 * @since  [Next]
+	 * @since  1.0.0
 	 * @param  int $seconds Cache expiration in seconds.
 	 * @return $this
 	 */
