@@ -91,14 +91,24 @@ use Micropackage\Cache\Cache;
 use Micropackage\Cache\Driver\ObjectCache;
 
 $driver = new ObjectCache( $group = 'my_group', $expiration = DAY_IN_SECONDS );
-$cache  = new Cache( $object_driver, $cache_key = 'extremaly_important_thing' );
+$cache  = new Cache( $driver, $cache_key = 'extremaly_important_thing' );
 
 $the_thing = $cache->collect( $cache_key = 'extremaly_important_thing', function() {
 	return 'The value was not set apparently';
 } );
 ```
 
-The `collect` method takes two arguments: the cache key and callable function. If the cache wasn't set for the provided key, the callable is called which should return the value for cache. The value is stored and returned.
+The `collect` method takes two arguments: the cache key and callable function. If the cache wasn't set for the provided key, the callable is called which should return the value for cache. The value is stored and returned
+
+Using variables from outside the callable:
+
+```php
+$some_var = 'I am awesome!';
+
+$the_thing = $cache->collect( 'extremaly_important_thing', function() use ( $some_var ) {
+	return $some_var;
+} );
+```
 
 ## 📦 About the Micropackage project
 
