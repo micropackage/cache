@@ -8,11 +8,11 @@
 namespace Micropackage\Cache\Driver;
 
 use Micropackage\Cache\Traits;
-
+use Micropackage\Cache\Abstracts\Driver;
 /**
  * Transient driver
  */
-class Transient {
+class Transient extends Driver {
 
 	use Traits\Expiration;
 
