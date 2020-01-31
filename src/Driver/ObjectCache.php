@@ -7,10 +7,13 @@
 
 namespace Micropackage\Cache\Driver;
 
+use Micropackage\Cache\Traits;
+use Micropackage\Cache\Abstracts\Driver;
+
 /**
  * ObjectCache driver
  */
-class ObjectCache {
+class ObjectCache extends Driver {
 
 	use Traits\Expiration;
 
