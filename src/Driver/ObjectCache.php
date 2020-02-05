@@ -2,7 +2,7 @@
 /**
  * ObjectCache driver
  *
- * @package micropackage/internationalization
+ * @package micropackage/cache
  */
 
 namespace Micropackage\Cache\Driver;
