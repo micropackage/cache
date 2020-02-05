@@ -3,7 +3,7 @@
  * Cacheable interface
  * Implemented by Driver classes
  *
- * @package micropackage/internationalization
+ * @package micropackage/cache
  */
 
 namespace Micropackage\Cache\Interfaces;

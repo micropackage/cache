@@ -2,7 +2,7 @@
 /**
  * Cache class
  *
- * @package micropackage/internationalization
+ * @package micropackage/cache
  */
 
 namespace Micropackage\Cache;
@@ -62,16 +62,24 @@ class Cache {
 	 * collect the value.
 	 *
 	 * @since  1.0.0
-	 * @param  string   $key      Cache key.
-	 * @param  callable $callback Callback which gets the value.
-	 * @return mixed              Cached value
+	 * @since  1.0.2 The key parameter is obsolete, it has been already set in the constructor.
+	 * @param  callable      $callback            Callback which gets the value.
+	 *                                            Or deprecated string as key in version 1.0.0.
+	 * @param  callable|null $deprecated_callback Callback which gets the value.
+	 *                                            Default: null
+	 * @return mixed                              Cached value
 	 */
-	public function collect( $key, $callback ) {
+	public function collect( $callback, $deprecated_callback = null ) {
 
 		$cached_value = $this->get();
 
 		if ( false !== $cached_value ) {
 			return $cached_value;
+		}
+
+		// @since 1.0.2 The callback is the only param of this method.
+		if ( ! is_callable( $callback ) ) {
+			$callback = $deprecated_callback;
 		}
 
 		$cached_value = call_user_func( $callback );

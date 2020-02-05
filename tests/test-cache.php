@@ -36,6 +36,18 @@ class TestCache extends \WP_UnitTestCase {
 
 		$this->driver->set( 'old-value' );
 
+		$val = $this->cache->collect( function() {
+			return 'new-value';
+		} );
+
+		$this->assertSame( 'old-value', $val );
+
+	}
+
+	public function test_should_not_call_collector_with_deprecated_key_param_when_value_set() {
+
+		$this->driver->set( 'old-value' );
+
 		$val = $this->cache->collect( $this->key, function() {
 			return 'new-value';
 		} );
