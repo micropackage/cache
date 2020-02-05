@@ -1,7 +1,7 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
-## [Next] -
+## 1.0.2 - 05.02.2020
 
 ### Changed
 - Cache `collect` method doesn't accept the key anymore, it has to be set in constructor.

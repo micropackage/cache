@@ -62,7 +62,7 @@ class Cache {
 	 * collect the value.
 	 *
 	 * @since  1.0.0
-	 * @since  [Next] The key parameter is obsolete, it has been already set in the constructor.
+	 * @since  1.0.2 The key parameter is obsolete, it has been already set in the constructor.
 	 * @param  callable      $callback            Callback which gets the value.
 	 *                                            Or deprecated string as key in version 1.0.0.
 	 * @param  callable|null $deprecated_callback Callback which gets the value.
@@ -77,7 +77,7 @@ class Cache {
 			return $cached_value;
 		}
 
-		// @since [Next] The callback is the only param of this method.
+		// @since 1.0.2 The callback is the only param of this method.
 		if ( ! is_callable( $callback ) ) {
 			$callback = $deprecated_callback;
 		}
