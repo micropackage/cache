@@ -6,6 +6,10 @@
 [![Total Downloads](https://poser.pugx.org/micropackage/cache/downloads)](https://packagist.org/packages/micropackage/cache)
 [![License](https://poser.pugx.org/micropackage/cache/license)](https://packagist.org/packages/micropackage/cache)
 
+<p align="center">
+    <img src="https://bracketspace.com/extras/micropackage/micropackage-small.png" alt="Micropackage logo"/>
+</p>
+
 ## 🧬 About Cache
 
 This micropackage is a wrapper for WordPress cache with two drivers implemented:
