@@ -9,6 +9,11 @@ namespace Micropackage\Cache;
 
 /**
  * Cache class
+ *
+ * @method void set( $value ) Sets cache value
+ * @method void add( $value ) Adds cache if it's not already set
+ * @method mixed|false get() Cached value or false if not set
+ * @method void delete() Deletes value from cache
  */
 class Cache {
 
