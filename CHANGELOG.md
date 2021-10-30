@@ -1,6 +1,11 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## [Next]
+
+### Changed
+- Paramater docblock comment for better static analysis.
+
 ## 1.0.2 - 05.02.2020
 
 ### Changed
