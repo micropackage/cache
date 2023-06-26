@@ -1,7 +1,7 @@
 {
 	"name": "micropackage/cache",
 	"description": "WordPress Cache wrapper with Object and Transient drivers",
-	"license": "GPL-3.0-or-later",
+	"license": "MIT",
 	"authors": [
 		{
 			"name": "Jakub Mikita",
